@@ -39,8 +39,8 @@
         <div class="modal-content bg-dark text-white"> 
             <div class="modal-body">
             <h4 class="modal-title text-center">Log in</h4>
-                <form method="$_POST">
-                    <div class="form-group mt-3 mb-3">
+                <form method="post">
+                    <div class="form-group mt-3 ">
                         <label for="Email">Email</label>
                         <input type="text" name="email" placeholder="Email" class="form-control" id="email"/>
                     </div>
@@ -49,9 +49,10 @@
                         <label for="name">Password</label>
                         <input type="text" name="pass" placeholder="Password" class="form-control" id="pass"/>
                     </div>
-                    
-                    <button type="button" class="btn btn-success mt-3 mb-3" data-dismiss="modal">Log in</button>
-                    <p>Not a member yet ? <a href="signup.php">Sign up here</a></p>
+                    <div class="login-section">
+                        <button type="button" class="btn btn-success mt-3 mb-3" data-dismiss="modal">Log in</button>
+                        <p>Not a member yet ? <a href="signup.php">Sign up here</a></p>
+                    </div>
                 </form>
             </div>
         </div>

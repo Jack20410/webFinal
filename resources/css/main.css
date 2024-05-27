@@ -25,6 +25,20 @@ li{
     border: 1px solid black;
 } */
 
+/* login modal */
+.form-group{
+    padding: 0px;
+}
+
+.login-section{
+    display: flex;
+}
+
+.login-section p{
+    margin-top: 22px;
+    margin-left: 5px;
+}
+
 .col-1{
     margin: auto 55px auto 55px;
     display: inline
@@ -71,10 +85,6 @@ img.carousel-item{
     width: 100px;
     height: 100px;
 
-}
-
-.form-group{
-    padding: 20px;
 }
 
 /* Now showing */
