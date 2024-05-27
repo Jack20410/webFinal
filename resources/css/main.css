@@ -221,3 +221,13 @@ nav .breadcrumb{
 iframe{
     width: 100%;
 }
+
+
+/* Sign up */
+
+.sign-modal .nav-tabs .nav-item{
+    width: 50%;
+    margin-bottom: 2rem;
+}
+
+/* End Sign up */
