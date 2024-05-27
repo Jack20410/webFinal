@@ -84,15 +84,15 @@
           <div id="carouselRide" class="carousel slide container-fluid " data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active" data-bs-interval="3000">
-                <img src="/web-final/assets/images/Carousel/furiosa-2048_1716547337203.jpg" width="800" height="800" class="d-block w-100" alt="carou1">
+                <img src="/web-final/assets/images/Carousel/furiosa-2048_1716547337203.jpg" width="800" height="600" class="d-block w-100" alt="carou1">
               </div>
 
               <div class="carousel-item " data-bs-interval="3000">
-                <img src="/web-final/assets/images/Carousel/carousel2.jpg" width="800" height="800" class="d-block w-100" alt="carou2">
+                <img src="/web-final/assets/images/Carousel/carousel2.jpg" width="800" height="600" class="d-block w-100" alt="carou2">
               </div>
 
               <div class="carousel-item" data-bs-interval="3000">
-                <img src="/web-final/assets/images/Carousel/doraemon.jpg" width="800" height="800" class="d-block w-100" alt="carou3">
+                <img src="/web-final/assets/images/Carousel/doraemon.jpg" width="800" height="600" class="d-block w-100" alt="carou3">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselRide" data-bs-slide="prev">
