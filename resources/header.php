@@ -2,7 +2,7 @@
 <div class="container-fluid " >
         <nav class="navbar fixed-top navbar-expand-lg nav-header" style="font-weight:700;">
             <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-                <li><a class="text-white navbar-brand" style="margin-left: 20px;" href="index.php">Online Movie Booking</a></li>
+                <li><a class="text-white navbar-brand" style="margin-left: 20px;" href="../resources/index.php">Online Movie Booking</a></li>
             </ul>
             <span>
                 <ul class="navbar-nav me-auto mt-2 mt-lg-0 nav-header" >

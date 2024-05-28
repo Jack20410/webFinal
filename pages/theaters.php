@@ -15,48 +15,17 @@
 </head>
 <body>
     <!-- Header start -->
-    <div class="container-fluid " >
-        <nav class="navbar fixed-top navbar-expand-lg nav-header" style="font-weight:700;">
-            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-                <li><a class="text-white navbar-brand" style="margin-left: 20px;" href="../resources/index.php">Online Movie Booking</a></li>
-            </ul>
-            <span>
-                <ul class="navbar-nav me-auto mt-2 mt-lg-0 nav-header" >
-                    <li class="nav-item right"><a class="nav-link text-white header-item active" style="margin-right: 20px;" href="#">My ticket</a></li>
-                    <li class="nav-item"><a class="nav-link text-white header-item" style="margin-right: 20px;" href="#">Log in</a></li>
-                </ul>
-            </span>
-        </nav>
+    <?php include '../resources/header.php'?>
+    
+    <!-- Menu start -->
+    <?php include '../resources/menu.php'?>
+
+    <h1>This page to select the cinema </h1>
+
+    <!-- Footer -->
+    <div class="footer">     
+        <p> Copyright &copy; 2024 TDTU</p>
     </div>
-
-    <!-- Header end -->
-    
-    
-    <div class="container-fluid">
-        
-        <!-- Menu start -->
-        <div class="menu container" style="padding-top: 4.5rem;" >
-            <div class="logo" style="float: inline-start; display: block ">
-                <img
-                    src="/web-final/assets/images/cinema.svg"
-                    class="img-thumbnail rounded-circle"
-                    alt="logoweb"/>
-            </div>
-            
-            <ul class="nav justify-content-center mainmenu">
-                <li class="nav-item"><a class="nav-link" id="menu-item" href="movies.php" aria-current="page">MOVIES</a></li>
-                <li class="nav-item"><a class="nav-link" id="menu-item" href="theaters.php">THEATERS</a></li>
-                <li class="nav-item"><a class="nav-link" id="menu-item" href="#">ABOUT</a></li>
-            </ul>
-        </div>
-        <!-- Menu end -->
-
-        <h1>This page to select the cinema </h1>
-
-        <!-- Footer -->
-        <div class="footer">     
-           <p> Copyright &copy; 2024 TDTU</p>
-        </div>
-        <!-- Footer -->
+    <!-- Footer -->
 </body>
 </html>
