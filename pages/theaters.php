@@ -44,7 +44,7 @@
             </div>
             
             <ul class="nav justify-content-center mainmenu">
-                <li class="nav-item"><a class="nav-link" id="menu-item" href="movies_showing.php" aria-current="page">MOVIES</a></li>
+                <li class="nav-item"><a class="nav-link" id="menu-item" href="movies.php" aria-current="page">MOVIES</a></li>
                 <li class="nav-item"><a class="nav-link" id="menu-item" href="theaters.php">THEATERS</a></li>
                 <li class="nav-item"><a class="nav-link" id="menu-item" href="#">ABOUT</a></li>
             </ul>

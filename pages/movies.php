@@ -2,6 +2,7 @@
     require_once('../resources/film_db.php'); // Ensure this is included to get the get_products function
 
     $film_available = get_products(); //fetch products here
+    $film_upcoming = upcoming_film();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -99,119 +100,7 @@
     </div>
         <!-- Now showing end -->
         <!-- Upcomming start -->
-        <div class="container">
-            <div class="home-title">
-                <h2 class="text-white" id="home-title">Up comming movies</h2>
-            </div>
-            <div class=" row now-show-poster">
-                <div class="col-3 card">
-                    <img class="card-img-top" src="/web-final/assets/images/Poster/075b0e5b689fadfdceb9ab5c5ed2c265.png" alt="phim1">
-                    <div class="description">
-                        <h4 class="title">Tháng tư ngày em đến</h4>
-                        <div class="sub-strict">
-                            <img class="strict" src="/web-final/assets/images/strict/13.png" alt="13">
-                            <p class="sub">Vietsub</p>
-                        </div>
-                        <p class="duration">108 Minutes</p>
-                        <button class="text-black buy-ticket" type="submit">Booking</button>
-                        <button class="text-black view-trailer" >Details</button>
-                    </div>   
-                </div>
-                <div class="col-3 card">
-                    <img class="card-img-top" src="/web-final/assets/images/Poster/075b0e5b689fadfdceb9ab5c5ed2c265.png" alt="phim1">
-                    <div class="description">
-                        <h4 class="title">Tháng tư ngày em đến</h4>
-                        <div class="sub-strict">
-                            <img class="strict" src="/web-final/assets/images/strict/13.png" alt="13">
-                            <p class="sub">Vietsub</p>
-                        </div>
-                        <p class="duration">108 Minutes</p>
-                        <button class="text-black buy-ticket" type="submit">Booking</button>
-                        <button class="text-black view-trailer" >Details</button>
-                    </div>   
-                </div>
-                <div class="col-3 card">
-                    <img class="card-img-top" src="/web-final/assets/images/Poster/075b0e5b689fadfdceb9ab5c5ed2c265.png" alt="phim1">
-                    <div class="description">
-                        <h4 class="title">Tháng tư ngày em đến</h4>
-                        <div class="sub-strict">
-                            <img class="strict" src="/web-final/assets/images/strict/13.png" alt="13">
-                            <p class="sub">Vietsub</p>
-                        </div>
-                        <p class="duration">108 Minutes</p>
-                        <button class="text-black buy-ticket" type="submit">Booking</button>
-                        <button class="text-black view-trailer" >Details</button>
-                    </div>   
-                </div>
-                <div class="col-3 card">
-                    <img class="card-img-top" src="/web-final/assets/images/Poster/075b0e5b689fadfdceb9ab5c5ed2c265.png" alt="phim1">
-                    <div class="description">
-                        <h4 class="title">Tháng tư ngày em đến</h4>
-                        <div class="sub-strict">
-                            <img class="strict" src="/web-final/assets/images/strict/13.png" alt="13">
-                            <p class="sub">Vietsub</p>
-                        </div>
-                        <p class="duration">108 Minutes</p>
-                        <button class="text-black buy-ticket" type="submit">Booking</button>
-                        <button class="text-black view-trailer" >Details</button>
-                    </div>   
-                </div>
-                <div class="col-3 card">
-                    <img class="card-img-top" src="/web-final/assets/images/Poster/075b0e5b689fadfdceb9ab5c5ed2c265.png" alt="phim1">
-                    <div class="description">
-                        <h4 class="title">Tháng tư ngày em đến</h4>
-                        <div class="sub-strict">
-                            <img class="strict" src="/web-final/assets/images/strict/13.png" alt="13">
-                            <p class="sub">Vietsub</p>
-                        </div>
-                        <p class="duration">108 Minutes</p>
-                        <button class="text-black buy-ticket" type="submit">Booking</button>
-                        <button class="text-black view-trailer" >Details</button>
-                    </div>   
-                </div>
-                <div class="col-3 card">
-                    <img class="card-img-top" src="/web-final/assets/images/Poster/075b0e5b689fadfdceb9ab5c5ed2c265.png" alt="phim1">
-                    <div class="description">
-                        <h4 class="title">Tháng tư ngày em đến</h4>
-                        <div class="sub-strict">
-                            <img class="strict" src="/web-final/assets/images/strict/13.png" alt="13">
-                            <p class="sub">Vietsub</p>
-                        </div>
-                        <p class="duration">108 Minutes</p>
-                        <button class="text-black buy-ticket" type="submit">Booking</button>
-                        <button class="text-black view-trailer" >Details</button>
-                    </div>   
-                </div>
-                <div class="col-3 card">
-                    <img class="card-img-top" src="/web-final/assets/images/Poster/075b0e5b689fadfdceb9ab5c5ed2c265.png" alt="phim1">
-                    <div class="description">
-                        <h4 class="title">Tháng tư ngày em đến</h4>
-                        <div class="sub-strict">
-                            <img class="strict" src="/web-final/assets/images/strict/13.png" alt="13">
-                            <p class="sub">Vietsub</p>
-                        </div>
-                        <p class="duration">108 Minutes</p>
-                        <button class="text-black buy-ticket" type="submit">Booking</button>
-                        <button class="text-black view-trailer" >Details</button>
-                    </div>   
-                </div>
-                <div class="col-3 card">
-                    <img class="card-img-top" src="/web-final/assets/images/Poster/075b0e5b689fadfdceb9ab5c5ed2c265.png" alt="phim1">
-                    <div class="description">
-                        <h4 class="title">Tháng tư ngày em đến</h4>
-                        <div class="sub-strict">
-                            <img class="strict" src="/web-final/assets/images/strict/13.png" alt="13">
-                            <p class="sub">Vietsub</p>
-                        </div>
-                        <p class="duration">108 Minutes</p>
-                        <button class="text-black buy-ticket" type="submit">Booking</button>
-                        <button class="text-black view-trailer" >Details</button>
-                    </div>   
-                </div>
-            </div>
-            
-        </div >
-        <!-- Upcomming end -->
+        <?php include '../pages/upcoming.php'?>
 
         <!-- Footer -->
         <div class="footer">     
