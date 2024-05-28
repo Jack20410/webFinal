@@ -9,6 +9,13 @@
 <head>
     <?php include 'head.php'?>
     <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <script>
+        $(function (){
+            <?php if($login_err_msg != "") {?>
+                $("#login").click();
+            <?php } ?>
+        });
+    </script>
 </head>
 <body>
     <!-- Header start -->
@@ -31,7 +38,8 @@
             <p> Copyright &copy; 2024 TDTU</p>
     </div>
     <!-- Footer -->
-        
+    
     </div>
+
 </body>
 </html>
