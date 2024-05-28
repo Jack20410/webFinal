@@ -1,3 +1,8 @@
+<?php 
+    require_once('../resources/film_db.php'); // Ensure this is included to get the get_products function
+
+    $film_available = get_products(); //fetch products here
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,107 +57,166 @@
         </div>
         <!-- Menu end -->
 
-        <!-- Main -->
+        <!-- Now showing start -->
         <div class="container">
-
-            <!-- Breadcrumbs -->
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a style="text-decoration: none;" href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Vây hãm: Kẻ trừng phạt</li>
-                </ol>
-            </nav>
-            <!-- End Breadcrumbs -->
-
-            <span class="h1 text-white" style="padding: 20px 0;">Movie detail</span>
-            <!-- Product detail -->
-            <div class="product-info row" style="color: white;">
-                <div class="movie-poster col-6">
-                    <img src="/web-final/assets/images/Poster/21bfa62437a9a7c24aa3837446a5d4f1.png" alt="" >
-
-                    <button class="btn btn-primary" href="#">Booking ticket</button>
-                </div>
-                <div class="movie-detail col-6">
-                    <div class="movie-name movie-info">
-                        <span class="h1"> Vây hãm: Kẻ trừng phạt </span>
-                    </div>
-
-                    <div class="movie-director movie-info">
-                        <h4>Director : </h4>
-                        <p>Heo Myeong Haeng</p>
-                    </div>
-
-                    <div class="movie-actress movie-info">
-                        <h5>Actress : </h5>
-                        <p>Ma Dong-seok, Kim Mu-yeol, Lee Joo-bin</p>
-                    </div>
-
-                    <div class="movie-genre movie-info">
-                        <h5>Movie genre : </h5>
-                        <p>Action, Crime</p>
-                    </div>
-
-                    <div class="movie-release movie-info" >
-                        <h5>Day release : </h5>
-                        <p>26/04/2024</p>
-                    </div>
-
-                    <div class="movie-language movie-info">
-                        <h5>Language : </h5>
-                        <p>Korean - Subtitle: Vietnamese, English</p>
-                    </div>
-                </div>
-            
-                <!-- Trailer -->
-            <div class="trailer">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/bNhiMWPHJ2Y?si=41lXfyNHExmceShY" 
-                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-            <!-- End trailer -->
-
-            </div>
-
-            <!-- End product detail -->
-
-            <!-- carousel start -->
-          <div id="carouselRide" class="carousel slide container-fluid " data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="3000">
-                <img src="/web-final/assets/images/Carousel/furiosa-2048_1716547337203.jpg" width="800" height="500" class="d-block w-100" alt="carou1">
-              </div>
-
-              <div class="carousel-item " data-bs-interval="3000">
-                <img src="/web-final/assets/images/Carousel/carousel2.jpg" width="800" height="500" class="d-block w-100" alt="carou2">
-              </div>
-
-              <div class="carousel-item" data-bs-interval="3000">
-                <img src="/web-final/assets/images/Carousel/doraemon.jpg" width="800" height="500" class="d-block w-100" alt="carou3">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselRide" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselRide" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        
-        <!-- carousel end -->
-
+        <div class="home-title">
+            <h2 class="text-white" id="home-title">Now showing</h2>
         </div>
-        <!-- End main -->
 
-        <h1>This is THEATERS page</h1>
+        <div class="row now-show-poster">
+        <?php 
+        if ($film_available) {
+            foreach ($film_available as $p) {
+                $name = $p['name'];
+                $genre = $p['genre'];
+                $age = $p['age'];
+                $sub = $p['sub'];
+                $release_date = $p['release_date'];
+                $timeline = $p['timeline'];
+                $trailer = $p['trailer'];
+                $image = $p['image'];
+                ?>
+                    <div class="col-3 card">
+                        <img class="card-img-top" src="../assets/images/Poster/<?= ($image) ?>" alt="<?= ($name) ?>">
+                        <div class="description">
+                            <p class="title"><?= ($name) ?></p>
+                            <div class="sub-strict">
+                                <img class="strict" src="../assets/images/strict/<?= ($age) ?>" alt="<?= ($age) ?>">
+                                <p class="sub"><?= ($sub) ?></p>
+                            </div>
+                            <p class="release"><?= ($release_date) ?> </p>
+                            <p class="duration"><?= ($timeline) ?> </p>
+                            <button class="text-black buy-ticket" type="submit">Booking</button>
+                            <button class="text-black view-trailer">Details</button>
+                        </div>
+                    </div>
+                <?php
+            }
+        }
+        ?>
+        </div>
+        </div>
+    </div>
+        <!-- Now showing end -->
+        <!-- Upcomming start -->
+        <div class="container">
+            <div class="home-title">
+                <h2 class="text-white" id="home-title">Up comming movies</h2>
+            </div>
+            <div class=" row now-show-poster">
+                <div class="col-3 card">
+                    <img class="card-img-top" src="/web-final/assets/images/Poster/075b0e5b689fadfdceb9ab5c5ed2c265.png" alt="phim1">
+                    <div class="description">
+                        <h4 class="title">Tháng tư ngày em đến</h4>
+                        <div class="sub-strict">
+                            <img class="strict" src="/web-final/assets/images/strict/13.png" alt="13">
+                            <p class="sub">Vietsub</p>
+                        </div>
+                        <p class="duration">108 Minutes</p>
+                        <button class="text-black buy-ticket" type="submit">Booking</button>
+                        <button class="text-black view-trailer" >Details</button>
+                    </div>   
+                </div>
+                <div class="col-3 card">
+                    <img class="card-img-top" src="/web-final/assets/images/Poster/075b0e5b689fadfdceb9ab5c5ed2c265.png" alt="phim1">
+                    <div class="description">
+                        <h4 class="title">Tháng tư ngày em đến</h4>
+                        <div class="sub-strict">
+                            <img class="strict" src="/web-final/assets/images/strict/13.png" alt="13">
+                            <p class="sub">Vietsub</p>
+                        </div>
+                        <p class="duration">108 Minutes</p>
+                        <button class="text-black buy-ticket" type="submit">Booking</button>
+                        <button class="text-black view-trailer" >Details</button>
+                    </div>   
+                </div>
+                <div class="col-3 card">
+                    <img class="card-img-top" src="/web-final/assets/images/Poster/075b0e5b689fadfdceb9ab5c5ed2c265.png" alt="phim1">
+                    <div class="description">
+                        <h4 class="title">Tháng tư ngày em đến</h4>
+                        <div class="sub-strict">
+                            <img class="strict" src="/web-final/assets/images/strict/13.png" alt="13">
+                            <p class="sub">Vietsub</p>
+                        </div>
+                        <p class="duration">108 Minutes</p>
+                        <button class="text-black buy-ticket" type="submit">Booking</button>
+                        <button class="text-black view-trailer" >Details</button>
+                    </div>   
+                </div>
+                <div class="col-3 card">
+                    <img class="card-img-top" src="/web-final/assets/images/Poster/075b0e5b689fadfdceb9ab5c5ed2c265.png" alt="phim1">
+                    <div class="description">
+                        <h4 class="title">Tháng tư ngày em đến</h4>
+                        <div class="sub-strict">
+                            <img class="strict" src="/web-final/assets/images/strict/13.png" alt="13">
+                            <p class="sub">Vietsub</p>
+                        </div>
+                        <p class="duration">108 Minutes</p>
+                        <button class="text-black buy-ticket" type="submit">Booking</button>
+                        <button class="text-black view-trailer" >Details</button>
+                    </div>   
+                </div>
+                <div class="col-3 card">
+                    <img class="card-img-top" src="/web-final/assets/images/Poster/075b0e5b689fadfdceb9ab5c5ed2c265.png" alt="phim1">
+                    <div class="description">
+                        <h4 class="title">Tháng tư ngày em đến</h4>
+                        <div class="sub-strict">
+                            <img class="strict" src="/web-final/assets/images/strict/13.png" alt="13">
+                            <p class="sub">Vietsub</p>
+                        </div>
+                        <p class="duration">108 Minutes</p>
+                        <button class="text-black buy-ticket" type="submit">Booking</button>
+                        <button class="text-black view-trailer" >Details</button>
+                    </div>   
+                </div>
+                <div class="col-3 card">
+                    <img class="card-img-top" src="/web-final/assets/images/Poster/075b0e5b689fadfdceb9ab5c5ed2c265.png" alt="phim1">
+                    <div class="description">
+                        <h4 class="title">Tháng tư ngày em đến</h4>
+                        <div class="sub-strict">
+                            <img class="strict" src="/web-final/assets/images/strict/13.png" alt="13">
+                            <p class="sub">Vietsub</p>
+                        </div>
+                        <p class="duration">108 Minutes</p>
+                        <button class="text-black buy-ticket" type="submit">Booking</button>
+                        <button class="text-black view-trailer" >Details</button>
+                    </div>   
+                </div>
+                <div class="col-3 card">
+                    <img class="card-img-top" src="/web-final/assets/images/Poster/075b0e5b689fadfdceb9ab5c5ed2c265.png" alt="phim1">
+                    <div class="description">
+                        <h4 class="title">Tháng tư ngày em đến</h4>
+                        <div class="sub-strict">
+                            <img class="strict" src="/web-final/assets/images/strict/13.png" alt="13">
+                            <p class="sub">Vietsub</p>
+                        </div>
+                        <p class="duration">108 Minutes</p>
+                        <button class="text-black buy-ticket" type="submit">Booking</button>
+                        <button class="text-black view-trailer" >Details</button>
+                    </div>   
+                </div>
+                <div class="col-3 card">
+                    <img class="card-img-top" src="/web-final/assets/images/Poster/075b0e5b689fadfdceb9ab5c5ed2c265.png" alt="phim1">
+                    <div class="description">
+                        <h4 class="title">Tháng tư ngày em đến</h4>
+                        <div class="sub-strict">
+                            <img class="strict" src="/web-final/assets/images/strict/13.png" alt="13">
+                            <p class="sub">Vietsub</p>
+                        </div>
+                        <p class="duration">108 Minutes</p>
+                        <button class="text-black buy-ticket" type="submit">Booking</button>
+                        <button class="text-black view-trailer" >Details</button>
+                    </div>   
+                </div>
+            </div>
+            
+        </div >
+        <!-- Upcomming end -->
 
         <!-- Footer -->
         <div class="footer">     
            <p> Copyright &copy; 2024 TDTU</p>
         </div>
         <!-- Footer -->
-        
-    </div>
 </body>
 </html>
