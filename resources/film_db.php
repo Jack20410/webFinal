@@ -1,22 +1,17 @@
-<?php 
-    require_once('connection.php');
+<?php
+require_once('connection.php');
 
-    function get_products()
-    {
-        $sql = "select * from films";
+function get_products() 
+{
+    $film_available_query = "SELECT * FROM film_available";
+    $conn = create_connection();
+    $result = $conn->query($film_available_query);
+    $data = array();
 
-        $conn = create_connection();
-
-        $result = $conn ->query($sql);
-        $data = array();
-
-        for ($i = 1; $i <= $result->num_rows; $i++){
-            $row = $result -> fetch_assoc();
-            $data[] = $row;
-        }
-        return $data;
+    while ($row = $result->fetch_assoc()) {
+        $data[] = $row;
     }
-
-    $all_products = get_products();
-    print_r($all_products);
+    $conn->close();
+    return $data;
+}
 ?>

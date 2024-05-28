@@ -105,7 +105,7 @@
             
                 <!-- Trailer -->
             <div class="trailer">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/bNhiMWPHJ2Y?si=41lXfyNHExmceShY" 
+                <iframe width="560" height="315" src="https://media.lottecinemavn.com/Media/MovieFile/MovieMedia/202403/11434_301_100001.mp4" 
                 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
