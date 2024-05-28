@@ -11,7 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="/web-final/resources/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/webFinal/resources/css/main.css">
 </head>
 <body>
     <!-- Header start -->
@@ -21,7 +21,7 @@
                 <li><a class="text-white navbar-brand" style="margin-left: 20px;" href="../resources/index.php">Online Movie Booking</a></li>
             </ul>
             <span>
-                <ul class="navbar-nav me-auto mt-2 mt-lg-0 nav-header" >
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0 nav-header">
                     <li class="nav-item right"><a class="nav-link text-white header-item active" style="margin-right: 20px;" href="#">My ticket</a></li>
                     <li class="nav-item"><a class="nav-link text-white header-item" style="margin-right: 20px;" href="#">Log in</a></li>
                 </ul>
@@ -68,7 +68,7 @@
             <!-- Product detail -->
             <div class="product-info row" style="color: white;">
                 <div class="movie-poster col-6">
-                    <img src="/web-final/assets/images/Poster/21bfa62437a9a7c24aa3837446a5d4f1.png" alt="" >
+                    <img src="/webFinal/assets/images/Poster/vay-ham.png" alt="" >
 
                     <button class="btn btn-primary" href="#">Booking ticket</button>
                 </div>
