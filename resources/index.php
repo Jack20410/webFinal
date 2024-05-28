@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Movie Booking</title>
-    <link rel="icon" href="/web-final/assets/cinema.ico">
+    <link rel="icon" href="../assets/cinema.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+         href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/main.css">
@@ -115,7 +117,7 @@
         <div class="menu container" style="padding-top: 4.5rem;" >
             <div class="logo" style="float: inline-start; display: block ">
                 <img
-                    src="/web-final/assets/images/cinema.svg"
+                    src="../assets/images/cinema.svg"
                     class="img-thumbnail rounded-circle"
                     alt="logoweb"
                     href="index.php"/>
@@ -133,15 +135,15 @@
           <div id="carouselRide" class="carousel slide container-fluid " data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active" data-bs-interval="3000">
-                <img src="/web-final/assets/images/Carousel/furiosa-2048_1716547337203.jpg" width="800" height="600" class="d-block w-100" alt="carou1">
+                <img src="../assets/images/Carousel/furiosa-2048_1716547337203.jpg" width="800" height="800" class="d-block w-100" alt="carou1">
               </div>
 
-              <div class="carousel-item " data-bs-interval="3000">
-                <img src="/web-final/assets/images/Carousel/carousel2.jpg" width="800" height="600" class="d-block w-100" alt="carou2">
+              <div class="carousel-item active" data-bs-interval="3000">
+                <img src="../assets/images/Carousel/carousel2.jpg" width="800" height="800" class="d-block w-100" alt="carou2">
               </div>
 
-              <div class="carousel-item" data-bs-interval="3000">
-                <img src="/web-final/assets/images/Carousel/doraemon.jpg" width="800" height="600" class="d-block w-100" alt="carou3">
+              <div class="carousel-item active" data-bs-interval="3000">
+                <img src="../assets/images/Carousel/doraemon.jpg" width="800" height="800" class="d-block w-100" alt="carou3">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselRide" data-bs-slide="prev">
@@ -158,65 +160,44 @@
 
         <!-- Now showing start -->
         <div class="container">
-            <div class="home-title">
-                <h2 class="text-white" id="home-title">Now showing</h2>
-            </div>
-            <div class=" row now-show-poster">
-                <div class="col-3 card">
-                    <img class="card-img-top" src="/web-final/assets/images/Poster/075b0e5b689fadfdceb9ab5c5ed2c265.png" alt="phim1">
-                    <div class="description">
-                        <h4 class="title">Tháng tư ngày em đến</h4>
-                        <div class="sub-strict">
-                            <img class="strict" src="/web-final/assets/images/strict/13.png" alt="13">
-                            <p class="sub">Vietsub</p>
-                        </div>
-                        <p class="duration">108 Minutes</p>
-                        <button class="text-black buy-ticket" type="submit">Booking</button>
-                        <button class="text-black view-trailer" >Details</button>
-                    </div>   
-                </div>
-                <div class="col-3 card">
-                    <img class="card-img-top" src="/web-final/assets/images/Poster/075b0e5b689fadfdceb9ab5c5ed2c265.png" alt="phim1">
-                    <div class="description">
-                        <h4 class="title">Tháng tư ngày em đến</h4>
-                        <div class="sub-strict">
-                            <img class="strict" src="/web-final/assets/images/strict/13.png" alt="13">
-                            <p class="sub">Vietsub</p>
-                        </div>
-                        <p class="duration">108 Minutes</p>
-                        <button class="text-black buy-ticket" type="submit">Booking</button>
-                        <button class="text-black view-trailer" >Details</button>
-                    </div>   
-                </div>
-                <div class="col-3 card">
-                    <img class="card-img-top" src="/web-final/assets/images/Poster/075b0e5b689fadfdceb9ab5c5ed2c265.png" alt="phim1">
-                    <div class="description">
-                        <h4 class="title">Tháng tư ngày em đến</h4>
-                        <div class="sub-strict">
-                            <img class="strict" src="/web-final/assets/images/strict/13.png" alt="13">
-                            <p class="sub">Vietsub</p>
-                        </div>
-                        <p class="duration">108 Minutes</p>
-                        <button class="text-black buy-ticket" type="submit">Booking</button>
-                        <button class="text-black view-trailer" >Details</button>
-                    </div>   
-                </div>
-                <div class="col-3 card">
-                    <img class="card-img-top" src="/web-final/assets/images/Poster/075b0e5b689fadfdceb9ab5c5ed2c265.png" alt="phim1">
-                    <div class="description">
-                        <h4 class="title">Tháng tư ngày em đến</h4>
-                        <div class="sub-strict">
-                            <img class="strict" src="/web-final/assets/images/strict/13.png" alt="13">
-                            <p class="sub">Vietsub</p>
-                        </div>
-                        <p class="duration">108 Minutes</p>
-                        <button class="text-black buy-ticket" type="submit">Booking</button>
-                        <button class="text-black view-trailer" >Details</button>
-                    </div>   
-                </div>
-            </div>
+        <div class="home-title">
+            <h2 class="text-white" id="home-title">Now showing</h2>
         </div>
-        
+
+        <div class="row now-show-poster">
+        <?php 
+        if ($film_available) {
+            foreach ($film_available as $p) {
+                $name = $p['name'];
+                $genre = $p['genre'];
+                $age = $p['age'];
+                $sub = $p['sub'];
+                $release_date = $p['release_date'];
+                $timeline = $p['timeline'];
+                $trailer = $p['trailer'];
+                $image = $p['image'];
+                ?>
+                    <div class="col-3 card">
+                        <img class="card-img-top" src="../assets/images/Poster/<?= ($image) ?>" alt="<?= ($name) ?>">
+                        <div class="description">
+                            <p class="title"><?= ($name) ?></p>
+                            <div class="sub-strict">
+                                <img class="strict" src="../assets/images/strict/<?= ($age) ?>" alt="<?= ($age) ?>">
+                                <p class="sub"><?= ($sub) ?></p>
+                            </div>
+                            <p class="release"><?= ($release_date) ?> </p>
+                            <p class="duration"><?= ($timeline) ?> </p>
+                            <button class="text-black buy-ticket" type="submit">Booking</button>
+                            <button class="text-black view-trailer">Details</button>
+                        </div>
+                    </div>
+                <?php
+            }
+        }
+        ?>
+        </div>
+        </div>
+    </div>
         <!-- Now showing end -->
 
         <!-- Upcomming start -->
@@ -225,12 +206,12 @@
                 <h2 class="text-white" id="home-title">Up comming movies</h2>
             </div>
             <div class=" row now-show-poster">
-                <div class="col-3 card">
-                    <img class="card-img-top" src="/web-final/assets/images/Poster/075b0e5b689fadfdceb9ab5c5ed2c265.png" alt="phim1">
+                <div class="col-lg-3 col-md-6 card">
+                    <img class="card-img-top" src="../assets/images/Poster/vay-ham.png" alt="phim1">
                     <div class="description">
                         <h4 class="title">Tháng tư ngày em đến</h4>
                         <div class="sub-strict">
-                            <img class="strict" src="/web-final/assets/images/strict/13.png" alt="13">
+                            <img class="strict" src="../assets/images/strict/13.png" alt="13">
                             <p class="sub">Vietsub</p>
                         </div>
                         <p class="duration">108 Minutes</p>
@@ -238,12 +219,12 @@
                         <button class="text-black view-trailer" >Details</button>
                     </div>   
                 </div>
-                <div class="col-3 card">
-                    <img class="card-img-top" src="/web-final/assets/images/Poster/075b0e5b689fadfdceb9ab5c5ed2c265.png" alt="phim1">
+                <div class="col-lg-3 col-md-6 card">
+                    <img class="card-img-top" src="../assets/images/Poster/075b0e5b689fadfdceb9ab5c5ed2c265.png" alt="phim1">
                     <div class="description">
                         <h4 class="title">Tháng tư ngày em đến</h4>
                         <div class="sub-strict">
-                            <img class="strict" src="/web-final/assets/images/strict/13.png" alt="13">
+                            <img class="strict" src="../assets/images/strict/13.png" alt="13">
                             <p class="sub">Vietsub</p>
                         </div>
                         <p class="duration">108 Minutes</p>
@@ -251,12 +232,12 @@
                         <button class="text-black view-trailer" >Details</button>
                     </div>   
                 </div>
-                <div class="col-3 card">
-                    <img class="card-img-top" src="/web-final/assets/images/Poster/075b0e5b689fadfdceb9ab5c5ed2c265.png" alt="phim1">
+                <div class="col-lg-3 col-md-6 card">
+                    <img class="card-img-top" src="../assets/images/Poster/075b0e5b689fadfdceb9ab5c5ed2c265.png" alt="phim1">
                     <div class="description">
                         <h4 class="title">Tháng tư ngày em đến</h4>
                         <div class="sub-strict">
-                            <img class="strict" src="/web-final/assets/images/strict/13.png" alt="13">
+                            <img class="strict" src="../assets/images/strict/13.png" alt="13">
                             <p class="sub">Vietsub</p>
                         </div>
                         <p class="duration">108 Minutes</p>
@@ -264,12 +245,12 @@
                         <button class="text-black view-trailer" >Details</button>
                     </div>   
                 </div>
-                <div class="col-3 card">
-                    <img class="card-img-top" src="/web-final/assets/images/Poster/075b0e5b689fadfdceb9ab5c5ed2c265.png" alt="phim1">
+                <div class="col-lg-3 col-md-6 card">
+                    <img class="card-img-top" src="../assets/images/Poster/075b0e5b689fadfdceb9ab5c5ed2c265.png" alt="phim1">
                     <div class="description">
                         <h4 class="title">Tháng tư ngày em đến</h4>
                         <div class="sub-strict">
-                            <img class="strict" src="/web-final/assets/images/strict/13.png" alt="13">
+                            <img class="strict" src="../assets/images/strict/13.png" alt="13">
                             <p class="sub">Vietsub</p>
                         </div>
                         <p class="duration">108 Minutes</p>
