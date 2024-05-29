@@ -26,7 +26,7 @@
                                         <p class="sub"><?= ($sub) ?></p>
                                     </div>
                                     <p class="duration"><?= ($timeline) ?> </p>
-                                    <button class="text-black view-trailer">Details</button>
+                                    
                                 </div>
                             </div>
                         <?php

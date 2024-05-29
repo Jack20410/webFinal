@@ -2,10 +2,10 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: May 28, 2024 at 11:59 AM
--- Server version: 10.4.32-MariaDB
--- PHP Version: 8.2.12
+-- Host: localhost
+-- Generation Time: May 29, 2024 at 01:48 PM
+-- Server version: 10.4.28-MariaDB
+-- PHP Version: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -57,25 +57,28 @@ CREATE TABLE `film_available` (
   `release_date` varchar(100) NOT NULL,
   `timeline` varchar(50) NOT NULL,
   `trailer` varchar(225) NOT NULL,
-  `image` varchar(150) NOT NULL
+  `image` varchar(150) NOT NULL,
+  `director` varchar(100) NOT NULL,
+  `actor` varchar(100) NOT NULL,
+  `language` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `film_available`
 --
 
-INSERT INTO `film_available` (`id`, `name`, `genre`, `age`, `sub`, `release_date`, `timeline`, `trailer`, `image`) VALUES
-(1, 'VÂY HÃM: KẺ TRỪNG PHẠT', 'Action/Adventure/SF Korea', '18.png', 'vietsub', '24/04/2024', '109 minutes', 'https://media.lottecinemavn.com/Media/MovieFile/MovieMedia/202404/11402_301_100001.mp4', 'vay-ham.png'),
-(2, 'LUYỆN NGẢI: CÔ HỒN DÃ QUỶ', 'Thriller/Criminal/Horror Thailand', '18.png', 'vietsub', '17/05/2024', '103 minutes', 'https://media.lottecinemavn.com/Media/MovieFile/MovieMedia/202405/11462_301_100001.mp4', 'co-hon-da-quy.png'),
-(3, 'MÈO MẬP MANG 10 MẠNG', 'Animation USA', 'p.png', 'vietsub', '26/04/2024', '88 minutes', 'https://media.lottecinemavn.com/Media/MovieFile/MovieMedia/202403/11434_301_100001.mp4', 'meo-map-mang-10-mang.jpg'),
-(4, 'HAIKYU: TRẬN CHIẾN BÃI PHẾ LIỆU', 'Animation Japan', 'p.png', 'vietsub', '15/05/2024', '85 minutes', 'https://media.lottecinemavn.com/Media/MovieFile/MovieMedia/202405/11461_301_100001.mp4', 'haikyu.png'),
-(5, 'DORAEMON: NOBITA VÀ BẢN GIAO HƯỞNG ĐỊA CẦU', 'Animation Japan', 'p.png', 'vietsub', '24/05/2024', '115 minutes', 'https://media.lottecinemavn.com/Media/MovieFile/MovieMedia/202405/11421_301_100001.mp4', 'doraemon.png'),
-(6, 'NGÔI ĐỀN KỲ QUÁI 4', 'Thriller/Criminal/Horror Thailand', '16.png', 'vietsub', '27/05/2024', '111 minutes', 'https://media.lottecinemavn.com/Media/MovieFile/MovieMedia/202404/11411_301_100001.mp4', 'ngoi-den-ky-quai.jpg'),
-(7, 'LẬT MẶT 7: MỘT ĐIỀU ƯỚC', 'Drama Vietnam', '13.png', 'vietsub', '24/04/2024', '138 minutes', 'https://media.lottecinemavn.com/Media/MovieFile/MovieMedia/202403/11399_301_100001.mp4', 'lat-mat-7.png'),
-(8, 'PANDA ĐẠI NÁO LÃNH ĐỊA VUA SƯ TỬ', 'Animation USA', 'p.png', 'vietsub', '03/05/2024', '88 minutes', 'https://media.lottecinemavn.com/Media/MovieFile/MovieMedia/202404/11423_301_100002.mp4', 'panda-dai-nao-loan-lanh-dia-vua-su-tu.jpg'),
-(9, 'FURIOSA: CÂU CHUYỆN TỪ MAX ĐIÊN', 'Action/Adventure/SF USA', '18.png', 'vietsub', '22/05/2024', '148 minutes', 'https://media.lottecinemavn.com/Media/MovieFile/MovieMedia/202405/11360_301_100002.mp4', 'furiosa.jpg'),
-(10, 'NHỮNG NGƯỜI BẠN TƯỞNG TƯỢNG', 'Animation USA', 'p.png', 'vietsub', '17/05/2024', '104 minutes', 'https://media.lottecinemavn.com/Media/MovieFile/MovieMedia/202402/11387_301_100001.mp4', 'nhung-nguoi-ban-tuong-tuong.png'),
-(11, 'HÀNH TINH KHỈ: VƯƠNG QUỐC MỚI', 'Action/Adventure/SF England', '13.png', 'vietsub', '10/05/2024', '144 minutes ', 'https://media.lottecinemavn.com/Media/MovieFile/MovieMedia/202405/11395_301_100001.mp4', 'hanh-tinh-khi-vuong-quoc-moi.jpg');
+INSERT INTO `film_available` (`id`, `name`, `genre`, `age`, `sub`, `release_date`, `timeline`, `trailer`, `image`, `director`, `actor`, `language`) VALUES
+(1, 'VÂY HÃM: KẺ TRỪNG PHẠT', 'Action/Adventure/SF Korea', '18.png', 'vietsub', '24/04/2024', '109 minutes', 'https://media.lottecinemavn.com/Media/MovieFile/MovieMedia/202404/11402_301_100001.mp4', 'vay-ham.png', 'Heo Myeong Haeng', 'Ma Dong-seok, Kim Mu-yeol, Lee Joo-bin', 'Korean with Vietnamese and English subtitle'),
+(2, 'LUYỆN NGẢI: CÔ HỒN DÃ QUỶ', 'Thriller/Criminal/Horror Thailand', '18.png', 'vietsub', '17/05/2024', '103 minutes', 'https://media.lottecinemavn.com/Media/MovieFile/MovieMedia/202405/11462_301_100001.mp4', 'co-hon-da-quy.png', 'Mate Yimsomboon', ' Punjan Prama, Supawadee Kitisopakul', 'Thai with Vietnamese and English subtitle'),
+(3, 'MÈO MẬP MANG 10 MẠNG', 'Animation USA', 'p.png', 'vietsub', '26/04/2024', '88 minutes', 'https://media.lottecinemavn.com/Media/MovieFile/MovieMedia/202403/11434_301_100001.mp4', 'meo-map-mang-10-mang.jpg', ' Christopher Jenkins', 'Mo Gilligan, Simone Ashley, Sophie Okonedo, Zayn Malik, Dylan Llewellyn, Jeremy Swift và Bill Nighy.', 'English with Vietnamese subtitle, dubbing'),
+(4, 'HAIKYU: TRẬN CHIẾN BÃI PHẾ LIỆU', 'Animation Japan', 'p.png', 'vietsub', '15/05/2024', '85 minutes', 'https://media.lottecinemavn.com/Media/MovieFile/MovieMedia/202405/11461_301_100001.mp4', 'haikyu.png', 'Susumu Mitsunaka', '', 'Japanese with English & Vietnamese subtitles'),
+(5, 'DORAEMON: NOBITA VÀ BẢN GIAO HƯỞNG ĐỊA CẦU', 'Animation Japan', 'p.png', 'vietsub', '24/05/2024', '115 minutes', 'https://media.lottecinemavn.com/Media/MovieFile/MovieMedia/202405/11421_301_100001.mp4', 'doraemon.png', 'Kazuaki Imai\r\n', 'Wasabi Mizuta, Megumi Ôhara, Yumi Kakazu', 'Japanese with Vietnamese subtitle; Dubbing'),
+(6, 'NGÔI ĐỀN KỲ QUÁI 4', 'Thriller/Criminal/Horror Thailand', '16.png', 'vietsub', '27/05/2024', '111 minutes', 'https://media.lottecinemavn.com/Media/MovieFile/MovieMedia/202404/11411_301_100001.mp4', 'ngoi-den-ky-quai.jpg', 'Phontharis Chotkijsadarsopon', 'Witthawat Rattanaboonbaramee, Bhuripat Vejvongsatechawat, Phiravich Attachitsataporn', 'Thai with Vietnamese subtitle'),
+(7, 'LẬT MẶT 7: MỘT ĐIỀU ƯỚC', 'Drama Vietnam', '13.png', 'vietsub', '24/04/2024', '138 minutes', 'https://media.lottecinemavn.com/Media/MovieFile/MovieMedia/202403/11399_301_100001.mp4', 'lat-mat-7.png', 'Lý Hải', 'Thanh Hiền, Trương Minh Cường, Đinh Y Nhung, Quách Ngọc Tuyên, Trâm Anh, Trần Kim Hải', 'Vietnamese with English subtitle'),
+(8, 'PANDA ĐẠI NÁO LÃNH ĐỊA VUA SƯ TỬ', 'Animation USA', 'p.png', 'vietsub', '03/05/2024', '88 minutes', 'https://media.lottecinemavn.com/Media/MovieFile/MovieMedia/202404/11423_301_100002.mp4', 'panda-dai-nao-loan-lanh-dia-vua-su-tu.jpg', 'KARSTEN KIILERICH', '', 'English with Vietnamese subtitle, dubbing'),
+(9, 'FURIOSA: CÂU CHUYỆN TỪ MAX ĐIÊN', 'Action/Adventure/SF USA', '18.png', 'vietsub', '22/05/2024', '148 minutes', 'https://media.lottecinemavn.com/Media/MovieFile/MovieMedia/202405/11360_301_100002.mp4', 'furiosa.jpg', ' George Miller', 'Anya Taylor-Joy, Chris Hemsworth, Nathan Jones', 'English with Vietnamese subtitle'),
+(10, 'NHỮNG NGƯỜI BẠN TƯỞNG TƯỢNG', 'Animation USA', 'p.png', 'vietsub', '17/05/2024', '104 minutes', 'https://media.lottecinemavn.com/Media/MovieFile/MovieMedia/202402/11387_301_100001.mp4', 'nhung-nguoi-ban-tuong-tuong.png', 'John Krasinski', 'Ryan Reynolds, Cailey Fleming, John Krasinski', 'English with Vietnamese subtitle, dubbing'),
+(11, 'HÀNH TINH KHỈ: VƯƠNG QUỐC MỚI', 'Action/Adventure/SF England', '13.png', 'vietsub', '10/05/2024', '144 minutes ', 'https://media.lottecinemavn.com/Media/MovieFile/MovieMedia/202405/11395_301_100001.mp4', 'hanh-tinh-khi-vuong-quoc-moi.jpg', 'Wes Ball', 'Owen Teague, Freya Allan, Kevin Durand, Peter Macon, and William H. Macy', 'English with Vietnamese subtitle');
 
 -- --------------------------------------------------------
 
@@ -116,6 +119,27 @@ INSERT INTO `film_upcoming` (`id`, `name`, `genre`, `sub`, `age`, `release_date`
 (14, 'LỐC XOÁY TỬ THẦN', 'Action/Adventure/SF USA', 'vietsub', '16.png', '2024-07-19', '130 minutes', 'https://www.youtube.com/watch?v=dvycs6rXILc&pp=ygUfTOG7kEMgWE_DgVkgVOG7rCBUSOG6pk4gdHJhaWxlcg%3D%3D', 'loc-xoay-tu-than.jpg'),
 (15, 'DEADPOOL & WOLVERINE', 'Action/Adventure/SF USA', 'vietsub', '18.png', '2024-07-23', '124 minutes', 'https://www.youtube.com/watch?v=inIVdZSFfc0&pp=ygUUREVBRFBPT0wgJiBXT0xWRVJJTkU%3D', 'deadpool-wolverine.jpg');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `password` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `name`, `email`, `password`) VALUES
+(1, 'admin', 'admin', '$2y$10$UA6d8dqFhh5T1WWWNZGeDetmVrMw8rGwndxxQijdKfBdte8z4l9wm'),
+(17, 'jack', 'jack1010@mail.com', '$2y$10$SvEss3P3jeolQsTZIXOumeW63Gocva4f5lLFO44jALHSOmUW0YOwS');
+
 --
 -- Indexes for dumped tables
 --
@@ -139,6 +163,12 @@ ALTER TABLE `film_upcoming`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -159,6 +189,12 @@ ALTER TABLE `film_available`
 --
 ALTER TABLE `film_upcoming`
   MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

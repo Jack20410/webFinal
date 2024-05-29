@@ -33,7 +33,8 @@ $film_available = get_products();
                                 </div>
                                 <p class="release"><?= ($release_date) ?> </p>
                                 <p class="duration"><?= ($timeline) ?> </p>
-                                <button class="text-black buy-ticket" type="submit">Booking</button>
+                                <button class="text-black buy-ticket" type="submit"><a href="../pages/booking.php?id=<?= $id;?>"
+                                style="text-decoration: none; color: black">Booking</a></button>
                                 <button id="<?= $id ?>" class="text-black view-trailer"><a href="../pages/detail.php?id=<?= $id;?>"
                                 style="text-decoration: none; color: black">Details</a></button>
                             </div>

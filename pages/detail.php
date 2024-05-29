@@ -36,7 +36,9 @@
               <div class="product-info row" style="color: white;">
                   <div class="movie-poster col-6">
                       <img src="../assets/images/Poster/<?php echo $row['image'] ?>">
-                      <button class="btn btn-primary" href="#">Booking ticket</button>
+                      
+                      <button class="btn btn-primary text-black buy-ticket" type="submit"><a href="booking.php?id=<?php echo $row['id'] ?>"
+                                style="text-decoration: none; color: black">Booking</a></button>
                   </div>
                   <div class="movie-detail col-6">
                       <div class="movie-name movie-info">

@@ -8,7 +8,7 @@
 <html lang="en">
 <head>
     <?php include '../resources/head.php'?>    
-    <link rel="stylesheet" type="text/css" href="/web-final/resources/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/webFinal/resources/css/main.css">
 </head>
 <body>
         <!-- Header start -->
