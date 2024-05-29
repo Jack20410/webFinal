@@ -1,12 +1,11 @@
 <?php
 session_start();
+$error = "";
 
-$login_err_msg = "";
-
-if (isset($_SESSION["login_err_msg"]) && $_SESSION["login_err_msg"] !="") {
-    $login_err_msg = $_SESSION["login_err_msg"];
+if (isset($_SESSION["error"]) && $_SESSION["error"] !="") {
+    $error = $_SESSION["error"];
     $email = $_SESSION["email"];
-    unset($_SESSION['login_err_msg']);
+    unset($_SESSION['error']);
     unset($_SESSION['email']);
 }
 

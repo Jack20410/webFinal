@@ -17,6 +17,7 @@
                     $timeline = $p['timeline'];
                     $trailer = $p['trailer'];
                     $image = $p['image'];
+                    $id = $p['id']; 
                     ?>
                         <div class="col-3 card">
                             <img class="card-img-top" src="../assets/images/Poster/<?= ($image) ?>" alt="<?= ($name) ?>">
@@ -29,7 +30,8 @@
                                 <p class="release"><?= ($release_date) ?> </p>
                                 <p class="duration"><?= ($timeline) ?> </p>
                                 <button class="text-black buy-ticket" type="submit">Booking</button>
-                                <button class="text-black view-trailer">Details</button>
+                                <button id="<?= $id ?>" class="text-black view-trailer"><a href="../pages/detail.php?id=<?=$id?>"
+                                style="text-decoration: none; color: black">Details</a></button>
                             </div>
                         </div>
                     <?php

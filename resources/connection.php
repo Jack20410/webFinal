@@ -8,11 +8,11 @@
     {
         $conn = new mysqli(HOST, USER, PASS, DB_NAME);
 
-    if ($conn->connect_error) 
-    {
-        die('Connection Failed: '. $conn->connect_error);
-    }
-    return $conn;
+        if ($conn->connect_error) 
+        {
+            die('Connection Failed: '. $conn->connect_error);
+        }
+        return $conn;
     }
 
     $conn = create_connection();
