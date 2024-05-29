@@ -3,7 +3,6 @@
 
     $film_available = get_products(); //fetch products here
     $film_upcoming = upcoming_film();
-
     
 ?>
 <!DOCTYPE html>

@@ -1,3 +1,7 @@
+<?php
+require_once('../resources/film_db.php');
+$film_available = get_products();
+?>
 <!-- Now showing start -->
 <div class="container">
         <!-- Now showing title -->
@@ -30,7 +34,7 @@
                                 <p class="release"><?= ($release_date) ?> </p>
                                 <p class="duration"><?= ($timeline) ?> </p>
                                 <button class="text-black buy-ticket" type="submit">Booking</button>
-                                <button id="<?= $id ?>" class="text-black view-trailer"><a href="../pages/detail.php?id=<?=$id?>"
+                                <button id="<?= $id ?>" class="text-black view-trailer"><a href="../pages/detail.php?id=<?= $id;?>"
                                 style="text-decoration: none; color: black">Details</a></button>
                             </div>
                         </div>
